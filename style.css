@@ -239,7 +239,7 @@ nav.nav-open .nav-burger span:nth-child(3) { transform: translateY(-6.5px) rotat
 .scholar-link-icon img {
   width: 16px;
   height: 16px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   filter: brightness(0) opacity(55%);
 }
 
