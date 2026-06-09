@@ -12,6 +12,11 @@
 
 <nav>
   <a href="index.html" class="nav-name">Dr. Sascha Jähnigen</a>
+  <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="index.html#research">Research</a></li>
     <li><a href="publications.html" >Publications</a></li>
@@ -23,7 +28,7 @@
 </nav>
 
 <div class="page-header">
-  <p class="page-tag">Complete List</p>
+  <!-- <p class="page-tag">Complete List</p> -->
   <h1 class="page-title">Talks</h1>
   <!-- <p class="page-subtitle">3 invited · 7 contributed · 5 colloquia &amp; seminars</p> -->
 </div>
@@ -248,6 +253,22 @@
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') document.getElementById('impressum-modal').classList.remove('open');
   });
+
+  // Hamburger menu
+  const burger = document.querySelector('.nav-burger');
+  const navEl  = document.querySelector('nav');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      const open = navEl.classList.toggle('nav-open');
+      burger.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        navEl.classList.remove('nav-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Sascha Jähnigen — Theoretical Chemist</title>
+<title>Dr. Sascha Jähnigen – Theoretical Chemist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,6 +13,11 @@
 <!-- NAV -->
 <nav>
   <span class="nav-name">Dr. Sascha Jähnigen</span>
+  <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <ul class="nav-links">
     <li><a href="#research">Research</a></li>
     <!-- <li><a href="#projects">Projects</a></li> -->
@@ -25,7 +30,7 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-left">
+  <div class="hero-profile">
     <div class="hero-avatar">
       <div class="avatar-ring"></div>
       <!-- <div class="avatar-placeholder"><img src="images/portrait_3_c_small.jpg" alt=SJ></div> -->
@@ -45,9 +50,9 @@
       <a href="https://scholar.google.com/citations?user=HgN99WUAAAAJ" class="scholar-link-icon"> <img src="logos/google-scholar-brands-solid-full.svg" alt="Google Scholar"/></a>           
     </div>
   </div>
-  <div class="hero-right">
+  <div class="hero-highlights">
     <div class="hero-avatar">
-      <p class="hero-tag">Recent Highlights</p>
+      <h2 class="highlights-title">Recent Highlights</h2>
     </div>
     <div class="highlights-grid" id="highlightsGrid">      
       <div class="highlight-card">
@@ -358,6 +363,22 @@
     grid.classList.toggle('expanded');
     toggle.textContent = grid.classList.contains('expanded') ? 'Show less' : 'Show more';
   });
+
+  // Hamburger menu
+  const burger = document.querySelector('.nav-burger');
+  const navEl  = document.querySelector('nav');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      const open = navEl.classList.toggle('nav-open');
+      burger.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        navEl.classList.remove('nav-open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 </script>
 </body>
 </html>
