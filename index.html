@@ -355,11 +355,13 @@
 </script>
 <script>
   const grid = document.getElementById('highlightsGrid');
+  const hero = grid.closest(".hero-highlights");
   const toggle = document.getElementById('highlightsToggle');
 
   toggle.addEventListener('click', (e) => {
     e.preventDefault();
     grid.classList.toggle('expanded');
+    hero.classList.toggle("expanded");
     toggle.textContent = grid.classList.contains('expanded') ? 'Show less' : 'Show more';
   });
 
