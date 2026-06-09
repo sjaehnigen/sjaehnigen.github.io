@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sascha Jähnigen — Theoretical Chemist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-name">Dr. Sascha Jähnigen</span>
+  <ul class="nav-links">
+    <li><a href="#research">Research</a></li>
+    <!-- <li><a href="#projects">Projects</a></li> -->
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="talks.html">Talks</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-avatar">
+      <div class="avatar-ring"></div>
+      <!-- <div class="avatar-placeholder"><img src="images/portrait_3_c_small.jpg" alt=SJ></div> -->
+      <img src="images/portrait_3_c_small.jpg" alt="SJ" class="avatar-placeholder"/>
+    </div>
+    <p class="hero-name">Sascha Jähnigen</p>
+    <p class="hero-tag">Research Associate · Freie Universität Berlin</p>
+    <p class="hero-bio">I am a theoretical chemist fascinated by multiscale chirality and cooperative dynamics in complex systems. 
+      My work centers on vibrational optical activity, developing quantum mechanical tools for its calculation, 
+      and on <i>ab initio</i> and stochastic molecular dynamics as virtual experiments to simulate realistic molecular motion.
+      <!-- add personal note -->
+    </p>
+    <div class="hero-actions">
+      <a href="mailto:sascha.jaehnigen@fu-berlin.de"><span class="contact-link-icon"><ion-icon name="mail-sharp"></ion-icon></span></a>
+      <a href="https://www.linkedin.com/in/sascha-jähnigen-4a5854304"><span class="contact-link-icon"><ion-icon name="logo-linkedin"></ion-icon></span></a>
+      <a href="https://github.com/sjaehnigen"><span class="contact-link-icon"><ion-icon name="logo-github"></ion-icon></span></a>
+      <a href="https://scholar.google.com/citations?user=HgN99WUAAAAJ" class="scholar-link-icon"> <img src="logos/google-scholar-brands-solid-full.svg" alt="Google Scholar"/></a>           
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-avatar">
+      <p class="hero-tag">Recent Highlights</p>
+    </div>
+    <div class="highlights-grid" id="highlightsGrid">      
+      <div class="highlight-card">
+        <div class="highlight-num">
+          <img src="images/MSM_1D_torus.png" alt="Beschreibung"/>
+        </div>
+        <div class="highlight-label">Our recent paper on "Implementation of Girsanov Reweigthing in CP2K" has been accepted for publication in 
+          <i>Communications in Applied Mathematics and Computational Science.</i> <a href="https://arxiv.org/abs/2601.05419"  class="highlights-toggle">Preprint→</a> </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-num">
+          <img src="images/STC2025-Logo.jpeg" alt="Beschreibung"/>
+        </div>
+        <div class="highlight-label">I talked about "Chirality and Vibrational Circular Dichroism in the Solid State" at the 
+          <i>61st Symposium on Theoretical Chemistry</i> in Berlin.
+          <a href="talks.html" class="highlights-toggle">Talks→</a> </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-num">
+          <img src="images/TOC.png" alt="Beschreibung"/>
+        </div>
+        <div class="highlight-label">New preprint: "Optical Activity in Crystalline Solids: Theoretical Formulations of Vibrational Circular Dichroism." <a href="https://doi.org/10.26434/chemrxiv-2025-b07pl"  class="highlights-toggle">Check it out→</a>
+        </div>
+      </div>      
+    </div>    
+    <a class="highlights-toggle" id="highlightsToggle">Show more</a>
+    <!-- <a href="#news" class="highlights-toggle">All news →</a>     -->
+  </div>
+</div>
+
+<!-- RESEARCH AREAS -->
+<section id="research" class="fade-in">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Research Areas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="areas-grid">
+    <div class="area-card">
+      <div class="area-icon"><img src="images/6-7-8-sphere_transparent.png" alt="🌀"></div>
+      <div class="area-name">Chirality in the Condensed Phase</div>
+      <p class="area-desc">We aim for a classification and quantification of supramolecular chirality in liquids, crystals, and at interfaces.</p>
+    </div>    
+    <div class="area-card">
+      <div class="area-icon"><img src="images/Figure_6.png" alt="🌀"></div>
+      <div class="area-name">Vibrational Optical Activity</div>
+      <p class="area-desc">Through Vibrational Circular Dichroism (VCD), we probe how chiral structure manifests in spectral observables,
+                unlocking an atomistic understanding of molecular systems.</p>
+    </div>
+    <div class="area-card">
+      <div class="area-icon"><img src="images/Diffusion_Cell_Bias.png" alt="🌀"></div>
+      <div class="area-name"><i>ab initio</i> Molecular Dynamics</div>
+      <p class="area-desc">We carry out "virtual experiments" through real-time molecular dynamics simulations,
+        combining DFT potentials with stochastic tools to capture realistic molecular motion.</p>
+    </div>
+    <div class="area-card">
+      <div class="area-icon"><img src="images/diss.png" alt="🌀"></div>
+      <div class="area-name">Nuclear Velocity Perturbation Theory</div>
+      <p class="area-desc">NVPT is our central tool for coupling nuclear and electronic degrees 
+        of freedom beyond the Born-Oppenheimer approximation, enabling the calculation of chiroptical properties.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PUBLICATIONS -->
+<section id="publications" class="fade-in">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Selected Publications</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="pub-list">
+
+    <div class="pub-item">
+      <span class="pub-year">2025</span>
+      <div class="pub-body">
+        <p class="pub-title">
+          <a href="https://doi.org/10.1039/D4SC08055F">The genesis of OH-stretching vibrational circular dichroism in chiral molecular crystals</a>
+        </p>
+        <p class="pub-journal"><em>Chemical Science</em> <strong>2025</strong>, <em>16</em>, 9833–9842</p>
+        <p class="pub-authors"><span class="pub-me">S. Jähnigen*</span>, R. Vuilleumier, A. Zehnacker*</p>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <span class="pub-year">2024</span>
+      <div class="pub-body">
+        <p class="pub-title">
+          <a href="https://doi.org/10.1021/acs.jpclett.4c01700">After 50 Years of Vibrational Circular Dichroism Spectroscopy: Challenges and Opportunities of Increasingly Accurate and Complex Experiments and Computations</a>
+        </p>
+        <p class="pub-journal"><em>J. Phys. Chem. Lett.</em> <strong>2024</strong>, <em>15</em>, 8813–8828</p>
+        <p class="pub-authors">J. Bloino*, <span class="pub-me">S. Jähnigen*</span>, C. Merten*</p>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <span class="pub-year">2023</span>
+      <div class="pub-body">
+        <p class="pub-title">
+          <a href="https://doi.org/10.1002/anie.202303595">Vibrational Circular Dichroism Spectroscopy of Chiral Molecular Crystals: Insights from Theory</a>
+        </p>
+        <p class="pub-journal"><em>Angew. Chem. Int. Ed.</em> <strong>2023</strong>, <em>62</em>, e202303595 · <em>Angew. Chem.</em> <strong>2023</strong>, <em>135</em>, e202303595</p>
+        <p class="pub-authors"><span class="pub-me">S. Jähnigen*</span></p>
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <span class="pub-year">2021</span>
+      <div class="pub-body">
+        <p class="pub-title">
+          <a href="https://doi.org/10.1021/acs.jpclett.1c01682">Computation of Solid-State Vibrational Circular Dichroism in the Periodic Gauge</a>
+        </p>
+        <p class="pub-journal"><em>J. Phys. Chem. Lett.</em> <strong>2021</strong>, <em>12</em>, 7213–7220</p>
+        <p class="pub-authors"><span class="pub-me">S. Jähnigen*</span>, A. Zehnacker, R. Vuilleumier*</p>
+      </div>
+      <div class="pub-badge-col"><span class="badge badge-vip">VIP</span></div>
+    </div>
+
+
+  </div>
+  <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+    <a href="publications.html" class="btn btn-primary">Full publication list →</a>
+    <a href="https://scholar.google.com/citations?user=HgN99WUAAAAJ" class="btn btn-outline">Google Scholar ↗</a>
+  </div>
+</section>
+
+<!-- TALKS -->
+<section id="talks" class="fade-in">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Selected Talks</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="talks-list">
+    
+    <div class="talk-item">
+      <span class="talk-date">Sep 2025</span>
+      <div class="talk-body">
+        <p class="talk-title">Chirality and Vibrational Circular Dichroism in the Solid State</p>
+        <p class="talk-venue">61st Symposium on Theoretical Chemistry (STC)</p>
+        <p class="talk-location">Berlin, Germany</p>
+      </div>
+      <!-- <div class="badge-col"><span class="badge badge-conf">Conference</span></div> -->
+    </div>
+
+    <div class="talk-item">
+      <span class="talk-date">Aug 2025</span>
+      <div class="talk-body">
+        <p class="talk-title">Chirality and Vibrational Circular Dichroism in the Solid State</p>
+        <p class="talk-venue">20th International Conference on Chiroptical Spectroscopy</p>
+        <p class="talk-location">Debrecen, Hungary</p>
+      </div>
+      <div class="badge-col"><span class="badge badge-invited">Invited</span></div>
+    </div>
+
+    <div class="talk-item">
+      <span class="talk-date">Mar 2024</span>
+      <div class="talk-body">
+        <p class="talk-title">Periodic Calculations of Vibrational Circular Dichroism: How are they supposed to work?</p>
+        <p class="talk-venue">123rd Annual Conference of the German Bunsen Society for Physical Chemistry</p>
+        <p class="talk-location">Aachen, Germany</p>
+      </div>
+      <!-- <div class="badge-col"><span class="badge badge-conf">Conference</span></div> -->
+    </div>
+
+    <!-- <div class="talk-item">
+      <span class="talk-date">Aug 2023</span>
+      <div class="talk-body">
+        <p class="talk-title">Vibrational Circular Dichroism of Chiral Crystals: The Interplay of Symmetry and Chirality</p>
+        <p class="talk-venue">12th International Conference on Advanced Vibrational Spectroscopy (ICAVS12)</p>
+        <p class="talk-location">Krakow, Poland</p>
+      </div>
+      <div class="badge-col"><span class="badge badge-conf">Conference</span></div>
+    </div> -->
+
+    <div class="talk-item">
+      <span class="talk-date">Mar 2023</span>
+      <div class="talk-body">
+        <p class="talk-title">Vibrational Circular Dichroism of Crystals: The Interplay of Symmetry and Chirality</p>
+        <p class="talk-venue">31st Annual Meeting of the German Crystallographic Society (DGK)</p>
+        <p class="talk-location">Frankfurt a. M., Germany</p>
+      </div>
+      <!-- <div class="badge-col"><span class="badge badge-conf">Conference</span></div> -->
+    </div>
+
+    <div class="talk-item">
+      <span class="talk-date">Aug 2022</span>
+      <div class="talk-body">
+        <p class="talk-title">Computation of VCD in the Periodic Gauge</p>
+        <p class="talk-venue">7th International Conference on Vibrational Optical Activity (VOA7)</p>
+        <p class="talk-location">Edmonton, Canada</p>
+      </div>
+      <div class="badge-col"><span class="badge badge-invited">Invited</span></div>
+    </div>
+
+  </div>
+  <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+    <a href="talks.html" class="btn btn-primary">Full talk list →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-grid">
+    <div>
+      <p class="contact-text">
+        I am happy to discuss my research and explore collaborations. The best way to reach me is by email.
+      </p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:sascha.jaehnigen@fu-berlin.de" class="contact-link">
+        <span class="contact-link-icon"><ion-icon name="mail-sharp"></ion-icon></span>
+        <div>
+          <span class="contact-link-label">Email</span>
+          sascha.jaehnigen@fu-berlin.de
+        </div>
+      </a>
+      <a href="https://github.com/sjaehnigen" class="contact-link">
+        <span class="contact-link-icon"><ion-icon name="logo-github"></ion-icon></span>
+        <div>
+          <span class="contact-link-label">GitHub</span>
+          github.com/sjaehnigen
+        </div>
+      </a>
+      <a href="https://orcid.org/0000-0002-2480-3313" class="contact-link">
+        <span class="orcid-link-icon"><img src="logos/ORCID-iD_icon_vector.svg" alt="ORCID iD"/></span>
+        <div>
+          <span class="contact-link-label">ORCID</span>
+          0000-0002-2480-3313
+        </div>
+      </a>
+      <a href="https://scholar.google.com/citations?user=HgN99WUAAAAJ" class="contact-link">
+        <span class="scholar-link-icon"><img src="logos/google-scholar-brands-solid-full.svg" alt="Google Scholar"/></span>
+        <div>
+          <span class="contact-link-label">Google Scholar</span>
+          Sascha Jähnigen
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>Dr. Sascha Jähnigen · Research Associate, Freie Universität Berlin</span>
+  <span>
+    <a href="#" onclick="document.getElementById('impressum-modal').classList.add('open'); return false;"
+       style="color: var(--ink-faint); text-decoration: none;">Impressum</a>
+    · Built with GitHub Pages
+  </span>
+</footer>
+
+<!-- IMPRESSUM MODAL -->
+<div id="impressum-modal" class="impressum-overlay"
+     onclick="if(event.target===this) this.classList.remove('open')">
+  <div class="impressum-box">
+    <button class="impressum-close"
+            onclick="document.getElementById('impressum-modal').classList.remove('open')">
+      × close
+    </button>
+    <h2 class="impressum-title">Impressum</h2>
+    <div class="impressum-grid">
+      <div>
+        <!-- <p class="impressum-label">Angaben gemäß § 5 TMG</p> -->
+        <p>Dr. Sascha Jähnigen</p>
+        <p>Freie Universität Berlin</p>
+        <p>Fachbereich Biologie, Chemie, Pharmazie</p>
+        <p>Institut für Chemie und Biochemie</p>
+        <p>Physikalische und Theoretische Chemie</p>
+        <p>Arnimalle 22</p>
+        <p>14195 Berlin</p>
+        <p>Deutschland</p>
+        <p style="margin-top: 1rem;">E-Mail: sascha.jaehnigen@fu-berlin.de</p>
+      </div>
+      <div>
+        <p class="impressum-label">Haftungsausschluss</p>
+        <p>Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
+        <p style="margin-top: 0.75rem;">Für externe Links wird keine Haftung übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- for social media icons -->
+<script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.getElementById('impressum-modal').classList.remove('open');
+  });
+</script>
+<script>
+  const grid = document.getElementById('highlightsGrid');
+  const toggle = document.getElementById('highlightsToggle');
+
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    grid.classList.toggle('expanded');
+    toggle.textContent = grid.classList.contains('expanded') ? 'Show less' : 'Show more';
+  });
+</script>
+</body>
+</html>
