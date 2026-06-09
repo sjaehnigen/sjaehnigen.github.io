@@ -155,7 +155,7 @@ nav.nav-open .nav-burger span:nth-child(3) { transform: translateY(-6.5px) rotat
   left: 0;
   right: 0;
   height: 80px;
-  background: linear-gradient(to bottom, var(--paper-warm), transparent);
+  background: linear-gradient(to bottom, transparent, var(--paper-warm));
   pointer-events: none;
 }
 
