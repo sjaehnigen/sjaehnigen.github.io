@@ -51,7 +51,7 @@ nav {
   border-bottom: 1px solid var(--line);
 }
 .nav-name {
-  font-family: var(--mono); font-size: 17px;
+  font-family: var(--mono); font-size: 15px;
   letter-spacing: 0.08em; color: var(--ink-muted);
   text-decoration: none;
 }
