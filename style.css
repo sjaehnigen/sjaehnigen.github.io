@@ -127,7 +127,7 @@ nav.nav-open .nav-burger span:nth-child(3) { transform: translateY(-6.5px) rotat
   margin-bottom: 1.5rem;
 }
 .hero-name {
-  font-family: var(--sans); font-size: clamp(1rem, 2.5vw, 2rem);
+  font-family: var(--sans); font-size: 15px;
   line-height: 1.1; font-weight: 400;
   margin-bottom: 1rem;
 }
